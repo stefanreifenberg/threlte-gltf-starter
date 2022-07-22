@@ -4,19 +4,19 @@
   import {
 		AmbientLight,
 		OrbitControls,
-		PerspectiveCamera
+		PerspectiveCamera,
+    DirectionalLight
 	} from '@threlte/core'
 </script>
 
 <div class="canvas-wrapper">
 
   <Canvas>
-    <PerspectiveCamera fov={90} position={{ x: 0, y:0, z: -12 }}>
+    <PerspectiveCamera fov={60} position={{ x: 0, y:0, z: 5 }}>
       <OrbitControls />
     </PerspectiveCamera>
-    <AmbientLight intensity={0.9}  />
 
-    <AmbientLight />  
+    <DirectionalLight shadow intensity={5} position={{ x: 3, y: 2, z: 3 }} target={{ x: 1, y: 1, z: 1 }} />
     <Model />
   </Canvas>
 
