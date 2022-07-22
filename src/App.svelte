@@ -12,7 +12,7 @@
 
   <Canvas>
     <PerspectiveCamera fov={90} position={{ x: 0, y:0, z: -12 }}>
-      <OrbitControls  autoRotate autoRotateSpeed={0.8} />
+      <OrbitControls />
     </PerspectiveCamera>
     <AmbientLight intensity={0.9}  />
 
